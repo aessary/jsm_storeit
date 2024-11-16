@@ -1,3 +1,5 @@
+"use server";
+
 // node-appwrite
 
 import { appwriteConfig } from "@/lib/appwrite/config";
