@@ -1057,6 +1057,58 @@ declare interface ShareInputProps {
 
 </details>
 
+##### **Next.js 15**
+
+- App Router and Layouts: Learned to navigate the new App Router system in Next.js 15, efficiently setting up nested layouts and dynamic routes.
+- Server and Client Components: Gained insights into balancing server and client components for optimal performance and SEO benefits.
+- Data Fetching Strategies: Utilized Next.js 15's enhanced data fetching methods like getServerSideProps and getStaticProps for efficient content rendering.
+- Edge and Middleware: Implemented middleware for authentication checks and edge functions for faster responses.
+
+##### **TypeScript**
+
+- Static Typing: Improved code reliability and maintainability by using TypeScript's static typing features.
+- Interfaces and Types: Defined interfaces and custom types for props, state, and API responses to enhance code clarity.
+- Generics and Advanced Types: Applied advanced TypeScript concepts like generics and utility types for flexible and reusable code.
+
+##### **Appwrite Integration**
+
+- User Authentication: Set up robust authentication flows with Appwrite, including signup, login, logout, and session management.
+- File Storage and Management: Leveraged Appwrite's storage API for uploading, downloading, renaming, and deleting files, ensuring secure and efficient file handling
+- Real-time Data: Implemented real-time updates using Appwrite's subscriptions, keeping the user interface in sync with the backend.
+- Security Rules: Defined and managed Appwrite's security rules to protect data and manage user permissions effectively.
+
+##### **Tailwind CSS**
+
+- Utility-First Styling: Embraced Tailwind CSS for rapid and consistent styling using utility classes.
+- Responsive Design: Created a mobile-first responsive design that adapts seamlessly across various devices and screen sizes.
+- Component Library: Utilized ShadCN UI components to build a modern, accessible, and cohesive user interface.
+- Theming and Customization: Customized the application's theme by extending Tailwind's configuration and integrating design tokens.
+
+##### **React Development**
+
+- Knowledge of JSX syntax and how it translates to JavaScript.
+- Building and structuring components.
+- Passing data and functions as props to components, and managing component communication
+- Using built-in hooks like useState, useEffect, useContext, and custom hooks for reusable logic.
+- Managing errors during data fetching and updating UI accordingly.
+
+##### **Version Control with Git**
+
+- Committing changes and managing branches.
+- Collaborating and tracking progress over time.
+- Maintained clear documentation and code comments.
+
+
+## 🤝 Acknowledgments
+
+Adrian Hajdin: For the comprehensive tutorial and
+guidance. [JavaScript Mastery](https://www.youtube.com/watch?v=kt0FrkQgw8w&t=3910s&ab_channel=JavaScriptMastery).
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+Note: This project is for educational purposes and is free to use under the terms of the MIT License.
 ## <a name="links">🔗 Assets</a>
 
 - Assets used in the project can be found [here](https://drive.google.com/file/d/1NCQH7HNXjfZMQ1MzpX3uRCixSY32iWl2/view?usp=sharing)
