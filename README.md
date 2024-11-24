@@ -1057,6 +1057,9 @@ declare interface ShareInputProps {
 
 </details>
 
+
+
+
 ##### **Next.js 15**
 
 - App Router and Layouts: Learned to navigate the new App Router system in Next.js 15, efficiently setting up nested layouts and dynamic routes.
@@ -1118,7 +1121,7 @@ Note: This project is for educational purposes and is free to use under the term
 
 **Advance your skills with Next.js Pro Course**
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
+Enjoyed creating this project? Dive deeper into PRO courses for a richer learning adventure. They're packed with
 detailed explanations, cool features, and exercises to boost your skills. Give it a go!
 
 <a href="https://jsmastery.pro/next15" target="_blank">
