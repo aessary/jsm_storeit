@@ -17,7 +17,7 @@ import {redirect} from "next/navigation";
             <Sidebar {...currentUser}
             />
             <section className="flex h-full flex-1 flex-col">
-                <MobileNavigation />
+                <MobileNavigation {...currentUser} />
                 <Header />
                 <div className="main-content">{children}</div>
             </section>
