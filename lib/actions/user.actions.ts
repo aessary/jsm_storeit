@@ -17,6 +17,7 @@ import { Query, ID } from "node-appwrite";
 import { parseStringify } from "@/lib/utils";
 import { cookies } from "next/headers";
 import {avatarPlaceholderUrl} from "@/constants";
+import {redirect} from "next/navigation";
 
 const getUserByEmail = async (email: string) => {
   const { databases } = await createAdminClient();
@@ -64,7 +65,7 @@ export const createAccount = async ({
         fullName,
         email,
         avatar: avatarPlaceholderUrl,
-        accountid: accountId,
+        accountId: accountId,
       },
     );
   }
@@ -105,7 +106,7 @@ export const getCurrentUser = async () => {
     const user = await databases.listDocuments(
         appwriteConfig.databaseId,
         appwriteConfig.usersCollectionId,
-        [Query.equal("accountid", result.$id)],
+        [Query.equal("accountId", result.$id)],
     );
 
     if (user.total <= 0) return null;
@@ -115,3 +116,18 @@ export const getCurrentUser = async () => {
     console.log(error);
   }
 };
+
+
+export const signOutUser = async () => {
+  const { account } = await createSessionClient();
+
+  try {
+    await account.deleteSession("current");
+    (await cookies()).delete("appwrite-session");
+  } catch (error) {
+    handleError(error, "Failed to sign out user");
+  } finally {
+    redirect("/sign-in");
+  }
+};
+
