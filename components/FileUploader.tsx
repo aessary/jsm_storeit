@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useCallback, useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn, convertFileToUrl, getFileType } from "@/lib/utils";
 import { useDropzone } from "react-dropzone";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Thumbnail from "./Thumbnail";
 
 interface Props {
   ownerId: string;
@@ -12,14 +13,23 @@ interface Props {
   className?: string;
 }
 
-const FileUploader = ({ ownerID, accountId, className }) => {
+const FileUploader: React.FC<Props> = ({ ownerId, accountId, className }) => {
   const [files, setFiles] = useState<File[]>([]);
 
   const onDrop = useCallback(async (acceptedFiles: File[]) => {
-    // Do something with the files
+    // Handle the dropped files
     setFiles(acceptedFiles);
   }, []);
+
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+
+  const handleRemoveFile = (
+    e: React.MouseEvent<HTMLImageElement, MouseEvent>,
+    fileName: string,
+  ) => {
+    e.stopPropagation();
+    setFiles((prevFiles) => prevFiles.filter((file) => file.name !== fileName));
+  };
 
   return (
     <div {...getRootProps()} className="cursor-pointer">
@@ -43,19 +53,37 @@ const FileUploader = ({ ownerID, accountId, className }) => {
                 key={`${file.name}-${index}`}
                 className="uploader-preview-item"
               >
-                test
+                <div className="flex items-center gap-3">
+                  <Thumbnail
+                    type={type}
+                    extension={extension}
+                    url={convertFileToUrl(file)}
+                  />
+
+                  <div className="preview-item-name">
+                    {file.name}
+                    <Image
+                      src="/assets/icons/file-loader.gif"
+                      width={80}
+                      height={80}
+                      alt="Loader"
+                    />
+                  </div>
+                </div>
+                <Image
+                  src="/assets/icons/remove.svg"
+                  height={24}
+                  width={24}
+                  alt="Remove"
+                  onClick={(e) => handleRemoveFile(e, file.name)}
+                />
               </li>
             );
           })}
         </ul>
       )}
-
-      {isDragActive ? (
-        <p>Drop the files here ...</p>
-      ) : (
-        <p>Drag & drop some files here, or click to select files</p>
-      )}
     </div>
   );
 };
+
 export default FileUploader;
