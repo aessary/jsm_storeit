@@ -77,6 +77,13 @@ const createQueries = (
   if (limit) queries.push(Query.limit(limit));
   // TO DO: Search Sort Limits..
 
+  if (sort) {
+    const [sortBy, orderBy] = sort.split("-");
+
+    queries.push(
+      orderBy === "asc" ? Query.orderAsc(sortBy) : Query.orderDesc(sortBy),
+    );
+  }
   return queries;
 };
 
