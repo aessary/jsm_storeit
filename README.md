@@ -99,7 +99,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/r3ss1/jsm_storeit.git
-
+cd jsm_storeit
 ```
 
 **Installation**
