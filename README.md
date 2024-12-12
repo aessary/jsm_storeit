@@ -98,7 +98,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/fum9ya/jsm_storeit.git
+git clone https://github.com/r3ss1/jsm_storeit.git
 
 ```
 
