@@ -12,6 +12,38 @@
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
   </div>
 
+
+  <br />
+
+   <img src="https://github.com/user-attachments/assets/458d6b98-8a0c-4c82-a976-b41eaf7c4f19" >
+  
+  <br /> 
+
+
+<br />
+   <img src="https://github.com/user-attachments/assets/f2d35f68-20ff-4da3-a3d6-1b4a66bee29e" >
+ 
+  <br /> 
+
+ 
+ <br />
+   <img src="https://github.com/user-attachments/assets/8269c903-557c-4c57-b981-072b266ea403" >
+  
+  <br /> 
+
+ 
+  <br /> 
+   <img src="https://github.com/user-attachments/assets/0af54ee2-c9a6-4f83-9943-9348677ddefe" >
+ 
+  <br /> 
+    <br /> 
+   <img src="https://github.com/user-attachments/assets/d3a898d5-4a62-4186-b4a7-753f53d3edae" >
+ 
+  <br /> <br />
+  
+  ![image]()
+
+
 <h3 align="center">Storage and File Sharing Platform</h3>
 
    <div align="center">
