@@ -41,7 +41,6 @@
  
   <br /> <br />
   
-  ![image]()
 
 
 <h3 align="center">Storage and File Sharing Platform</h3>
